@@ -8,7 +8,7 @@ module.exports = merge(releaseConfig, {
   },
   plugins: [
     new webpack.DefinePlugin({
-      'process.env': '"production"'
+      'process.env.NODE_ENV': '"production"'
     }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
